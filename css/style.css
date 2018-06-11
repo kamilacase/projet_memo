@@ -47,6 +47,8 @@ img {
     background-image: url("bar6.gif");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+    
 }
 .corps {
     background-image: url("red.jpg");

@@ -49,9 +49,13 @@ function majAffichage(noCarte){
 function rejouer(){
 	alert("Hé ben, gros cochon !");
 	location.reload();
-    randombg();
-
+    // randombg();
+    url:"Shake It Baby-SoundBible.com-763292018.mp3"
 }
+
+etatsCartes.addEventListener("click",function(){
+    url:"Shake It Baby-SoundBible.com-763292018.mp3"
+})
 function initialiseJeu(){
 	for(var position=motifsCartes.length-1; position>=1; position--){
 		var hasard=Math.floor(Math.random()*(position+1));
