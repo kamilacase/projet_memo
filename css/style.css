@@ -44,10 +44,21 @@ img {
 
 }
 #tapis {
-    background-image: url("ass-asciif5c34.gif");
+    background-image: url("bar6.gif");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .corps {
     background-image: url("red.jpg");
     background-size: cover;
+}
+header img{
+    width: 200px;
+    height: auto;
+}
+button {
+    width: 200px;
+    font-weight: bold;
+    margin-bottom: 5em;
+    display: none;
 }

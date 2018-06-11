@@ -12,12 +12,13 @@
     <header>
         <h1>Ultimate 3615ULLA Cards Memory Game</h1>
         <h2>Retrouves les paires identiques afin devoiler ta récompense</h2>
+        <img src="css/xxx.jpg" alt="">;
     </header>
 
 <div class="corps">
 
     <main>
-        <table id="tapis">
+        <table onload="randombg()"id="tapis">
             <tr>
                 <td><img src="../css/img/back.png" /></td>
                 <td><img src="../css/img/back.png" /></td>
@@ -50,9 +51,11 @@
     </main>
 
     <footer>
+        <button onclick="randombg()" name="button">Changer de Fond</button>
         <p>&copy;FistLab games company. All rights reserved 2018</p>
     </footer>
 </div>
+
     <script src="js/script.js">
     </script>
 </body>

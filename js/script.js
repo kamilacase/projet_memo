@@ -1,8 +1,26 @@
 var motifsCartes=[1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10];
 var etatsCartes=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+// var fondCoquin=[1,2,3,4,5,6,7,8,9,10];
 var cartesRetournees=[];
 var nbPairesTrouvees=0;
 var imgCartes=document.getElementById("tapis").getElementsByTagName("img");
+// var imgCoquin=document.getElementById('tapis');
+
+window.onload = function randombg(){
+    var random= Math.floor(Math.random() * 10) + 0;
+    var fondCoquin = ["url('../css/bar1.gif')",
+    "url('../css/bar2.gif')",
+    "url('../css/bar3.gif')",
+    "url('../css/bar4.gif')",
+    "url('../css/bar5.gif')",
+    "url('../css/bar6.gif')",
+    "url('../css/bar7.gif')",
+    "url('../css/bar8.gif')",
+    "url('../css/bar9.gif')",
+    "url('../css/bar10.gif')"
+];
+document.getElementById("tapis").style.backgroundImage=fondCoquin[random];
+}
 
 for(var i=0;i<imgCartes.length;i++){
 	imgCartes[i].noCarte=i; //Ajout de la propriété noCarte à l'objet img
@@ -11,6 +29,8 @@ for(var i=0;i<imgCartes.length;i++){
 	}
 }
 initialiseJeu();
+
+
 function majAffichage(noCarte){
 	switch(etatsCartes[noCarte]){
 		case 0:
@@ -23,10 +43,14 @@ function majAffichage(noCarte){
 			imgCartes[noCarte].style.visibility="hidden";
 			break;
 	}
+
 }
+
 function rejouer(){
 	alert("Hé ben, gros cochon !");
 	location.reload();
+    randombg();
+
 }
 function initialiseJeu(){
 	for(var position=motifsCartes.length-1; position>=1; position--){
@@ -36,6 +60,7 @@ function initialiseJeu(){
 		motifsCartes[hasard]=sauve;
 	}
 }
+
 function controleJeu(noCarte){
     if(cartesRetournees.length<2){
         if(etatsCartes[noCarte]==0){
