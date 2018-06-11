@@ -25,7 +25,7 @@ function majAffichage(noCarte){
 	}
 }
 function rejouer(){
-	alert("Bravo !");
+	alert("Hé ben, gros cochon !");
 	location.reload();
 }
 function initialiseJeu(){
