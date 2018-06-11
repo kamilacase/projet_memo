@@ -1,0 +1,16 @@
+body {
+    background-image: url("texture-felt-27758474.jpg");
+    background-size: cover;
+}
+header {
+    text-align: center;
+    color: white;
+    background-image: url("bouton1.png");
+    line-height: 5em;
+    background-size: cover;
+    height: 500px;
+}
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
