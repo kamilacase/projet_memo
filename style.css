@@ -1,0 +1,73 @@
+body {}
+
+header {
+    text-align: center;
+    background-color: black;
+    line-height: 5em;
+    background-size: cover;
+}
+
+h1 {
+    padding-top: 50px;
+    font-size: 70px;
+    font-weight: bold;
+    color: gold;
+}
+
+h2 {
+    font-weight: bold;
+    color: chartreuse;
+}
+
+td {
+    width: 100px;
+    margin-bottom: 2em;
+}
+
+table {
+    width: 800px;
+    margin: auto;
+}
+
+footer {
+    font-size: 20px;
+    color: white;
+    text-align: right;
+    margin-top: 6em;
+    font-weight: bold;
+}
+
+tr {}
+
+main {
+    padding-top: 4em;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#tapis {
+    background-image: url("bar6.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.corps {
+    background-image: url("texture-felt-27758474.jpg");
+    background-size: cover;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+}
+
+button {
+    width: 200px;
+    font-weight: bold;
+    margin-bottom: 5em;
+    display: none;
+}
